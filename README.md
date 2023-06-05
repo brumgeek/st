@@ -10,3 +10,7 @@ Patch
     patch < patches/st-xresources-signal-reloading-20220407-ef05519.diff
 
 make
+
+#### xresources reload
+
+    pidof st | xargs kill -s USR1 
